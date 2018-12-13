@@ -1,0 +1,47 @@
+{
+    "direction":10,
+    "direction_R":20,
+    "zmq": {
+        "sockets": {
+            "wind": {
+                "type":"sub",
+                "connect":"tcp://localhost:10000",
+                "option": {
+                    "subscribe":""
+                }
+            },
+            "wind_R": {
+                "type":"sub",
+                "connect":"tcp://localhost:10001",
+                "option": {
+                    "subscribe":""
+                }
+            },
+            "VNGO": {
+                "type":"sub",
+                "connect":"tcp://localhost:10002",
+                "option": {
+                    "subscribe":""
+                }
+            },
+            "BAR": {
+                "type":"sub",
+                "connect":"tcp://localhost:10003",
+                "option": {
+                    "subscribe":""
+                }
+            },
+            "manual": {
+                "type":"sub",
+                "connect":"tcp://localhost:10004",
+                "option": {
+                    "subscribe":""
+                }
+            },
+            "qManual": {
+                "type":"req",
+                "connect":"tcp://localhost:10005",
+            }
+        }
+    }
+}

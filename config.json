@@ -1,0 +1,32 @@
+{
+    "direction":10,
+    "direction_R":20,
+    "zmq": {
+        "sockets": {
+            "wind": {
+                "type":"sub",
+                "connect":"tcp://localhost:10000"
+            },
+            "BAR": {
+                "type":"sub",
+                "connect":"tcp://localhost:10004"
+            },
+            "temp": {
+                "type":"sub",
+                "connect":"tcp://localhost:10003"
+            },
+
+            "PRECCalc": {
+                "type":"sub",
+                "connect":"tcp://localhost:10777"
+            },
+            "RAIN": {
+                "type":"sub",
+                "connect":"tcp://localhost:10777"
+            }
+        }
+    }
+
+
+
+}
